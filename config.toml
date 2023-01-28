@@ -1,5 +1,5 @@
 languageCode = 'en-us'
-theme = "terminal"
+theme = "PaperMod"
 title = "ezntek's blog"
 baseurl = "/"
 
@@ -36,7 +36,7 @@ updatedDatePrefix = "Updated"
 		[languages.en.menu]
 			[[languages.en.menu.main]]
 			identifier = "about"
-			name = "My Stuff"
+			name = "About"
 			url = "/about"
 			[[languages.en.menu.main]]
 			identifier = "stuff"
