@@ -1,17 +1,14 @@
 +++
-title = "Hello World!"
-date = "2023-01-28T20:13:32+08:00"
+title = "Hello World"
+date = 2023-01-28T21:24:44+08:00
 author = "ezntek"
-authorTwitter = "" #do not include @
-cover = ""
-tags = ["testTag", ""]
+tags = [""]
 keywords = ["", ""]
-description = "First post (lorem ipsum)"
-showFullContent = false
-readingTime = false
-hideComments = false
-color = "" #color from the theme settings
+description = ""
+draft = false
 +++
+
+A simple Lorem Ipsum page to test if things are working.
 
 # Iamque precantum saucius
 ## Responsa dixit

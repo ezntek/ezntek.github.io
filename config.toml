@@ -1,8 +1,13 @@
 languageCode = 'en-us'
 title = "ezntek's blog"
+theme = "ananke"
 baseurl = "/"
 
 [params]
+	author = "ezntek"
+	description = "A 14-year-old asian programmer."
+	#avatar = ""
+
 	contentTypeName = "posts"
 	showMenuItems = 3
 	showLanguageSelector = false
@@ -13,14 +18,25 @@ baseurl = "/"
 	enableGitInfo = true
 	updatedDatePrefix = "Updated"
 
+	[params.style]
+		darkestColor = "#2E3440"
+		darkColor = "#3B4252"
+		lightColor = "#D8DEE9"
+		lightestColor = "#E5E9F0"
+		primaryColor = "#ECEFF4"
+
+	[[params.ananke_socials]]
+		name = "GitHub"
+		url = "https://github.com/ezntek"
+
 [languages]
 	[languages.en]
 		languageName = "English"
-		title = "Ezntek's blog"
+		title = "ezntek's Blog"
 		subtitle = "My personal blog."
-		owner = ""
+		owner = "ezntek"
 		keywords = ""
-		copyright = ""
+		copyright = "rEason Qin 2023."
 		menuMore = "Show More"
 		readMore = "Read More"
 		readOtherPosts = "Read other posts"
@@ -28,18 +44,15 @@ baseurl = "/"
 		missingBackButtonLabel = "Back to home"
 		
 		[languages.en.params.logo]
-			logoText = "test logo text"
+			logoText = "ezntek's Blog."
 			logoHomeLink = "/"
 
-		[languages.en.menu]
-			[[languages.en.menu.main]]
-			identifier = "about"
-			name = "About"
-			url = "/about"
-			[[languages.en.menu.main]]
-			identifier = "stuff"
-			name = "My Stuff"
-			url = "/stuff"
-
-[[module.imports]]
-path = "github.com/CaiJimmy/hugo-theme-stack/v3"
+[menu]
+	[[menu.main]]
+	identifier = "about"
+	name = "About"
+	url = "/about"
+	[[menu.main]]
+	identifier = "stuff"
+	name = "My Stuff"
+	url = "/stuff"
