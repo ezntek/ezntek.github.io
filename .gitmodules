@@ -1,6 +1,12 @@
-[submodule "themes/paper"]
-	path = themes/paper
-	url = https://github.com/nanxiaobei/hugo-paper
 [submodule "themes/hugo-theme-stack"]
 	path = themes/hugo-theme-stack
 	url = https://github.com/CaiJimmy/hugo-theme-stack/
+[submodule "themes/fuji"]
+	path = themes/fuji
+	url = https://github.com/dsrkafuu/hugo-theme-fuji.git
+[submodule "themes/m10c"]
+	path = themes/m10c
+	url = https://github.com/vaga/hugo-theme-m10c.git
+[submodule "themes/ananke"]
+	path = themes/ananke
+	url = https://github.com/theNewDynamic/gohugo-theme-ananke.git
