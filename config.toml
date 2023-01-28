@@ -1,5 +1,5 @@
 languageCode = 'en-us'
-theme = "terminal"
+#theme = "terminal"
 title = "ezntek's blog"
 baseurl = "/"
 
