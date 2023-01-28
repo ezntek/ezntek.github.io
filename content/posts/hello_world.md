@@ -12,7 +12,3 @@ readingTime = false
 hideComments = false
 color = "" # color from the theme settings
 +++
-
-# Hello, World!
-
-Congratulations to myself! I have set up a HUGO site.
