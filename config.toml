@@ -1,0 +1,44 @@
+languageCode = 'en-us'
+theme = "terminal"
+title = "ezntek's blog"
+baseurl = "/"
+
+[params]
+contentTypeName = "posts"
+themeColor = "orange"
+showMenuItems = 3
+showLanguagSelector = false
+fullWidthTheme = false
+centerTheme = false
+# favicon = "favicon.ico"
+showLastUpdated = true
+enableGitInfo = true
+updatedDatePrefix = "Updated"
+
+[languages]
+	[languages.en]
+		languageName = "English"
+		title = "Ezntek's blog"
+		subtitle = "My personal blog."
+		owner = ""
+		keywords = ""
+		copyright = ""
+		menuMore = "Show More"
+		readMore = "Read More"
+		readOtherPosts = "Read other posts"
+		missingContentMessage = "Page not found..."
+		missingBackButtonLabel = "Back to home"
+		
+		[languages.en.params.logo]
+			logoText = "test logo text"
+			logoHomeLink = "/"
+
+		[languages.en.menu]
+			[[languages.en.menu.main]]
+			identifier = "about"
+			name = "My Stuff"
+			url = "/about"
+			[[languages.en.menu.main]]
+			identifier = "stuff"
+			name = "My Stuff"
+			url = "/stuff"
