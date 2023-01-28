@@ -1,19 +1,17 @@
 languageCode = 'en-us'
-theme = "PaperMod"
 title = "ezntek's blog"
 baseurl = "/"
 
 [params]
-contentTypeName = "posts"
-themeColor = "orange"
-showMenuItems = 3
-showLanguageSelector = false
-fullWidthTheme = true
-centerTheme = true
-# favicon = "favicon.ico"
-showLastUpdated = true
-enableGitInfo = true
-updatedDatePrefix = "Updated"
+	contentTypeName = "posts"
+	showMenuItems = 3
+	showLanguageSelector = false
+	fullWidthTheme = true
+	centerTheme = true
+	# favicon = "favicon.ico"
+	showLastUpdated = true
+	enableGitInfo = true
+	updatedDatePrefix = "Updated"
 
 [languages]
 	[languages.en]
@@ -42,3 +40,6 @@ updatedDatePrefix = "Updated"
 			identifier = "stuff"
 			name = "My Stuff"
 			url = "/stuff"
+
+[[module.imports]]
+path = "github.com/CaiJimmy/hugo-theme-stack/v3"
