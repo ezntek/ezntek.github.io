@@ -1,11 +1,19 @@
 languageCode = 'en-us'
 title = "ezntek's blog"
-theme = "ananke"
+theme = "fuji"
 baseurl = "/"
+
+[permalinks]
+	post = "/posts/:year/:month/:title/"
 
 [params]
 	author = "ezntek"
 	description = "A 14-year-old asian programmer."
+	subTitle = "ezntek's Site."
+	sourceURL = "https://github.com/ezntek/ezntek.github.io"
+	showLicense = true
+	license = "the Creative Commons BY-NC-SA 4.0 License"
+	licenseLink = "http://creativecommons.org/licenses/by-nc-sa/4.0/"
 	#avatar = ""
 
 	contentTypeName = "posts"
@@ -17,26 +25,25 @@ baseurl = "/"
 	showLastUpdated = true
 	enableGitInfo = true
 	updatedDatePrefix = "Updated"
+	paginate = 50
 
-	[params.style]
-		darkestColor = "#2E3440"
-		darkColor = "#3B4252"
-		lightColor = "#D8DEE9"
-		lightestColor = "#E5E9F0"
-		primaryColor = "#ECEFF4"
+[markup.goldmark.renderer]
+	unsafe = true
+		
 
-	[[params.ananke_socials]]
-		name = "GitHub"
-		url = "https://github.com/ezntek"
+[authors]
+	[[authors.ezntek]]
+		name = "ezntek"
+		default = true	
 
 [languages]
 	[languages.en]
 		languageName = "English"
-		title = "ezntek's Blog"
-		subtitle = "My personal blog."
+		title = "ezntek's Site"
+		subtitle = "My personal site."
 		owner = "ezntek"
 		keywords = ""
-		copyright = "rEason Qin 2023."
+		copyright = "Eason Qin 2023"
 		menuMore = "Show More"
 		readMore = "Read More"
 		readOtherPosts = "Read other posts"
@@ -47,12 +54,31 @@ baseurl = "/"
 			logoText = "ezntek's Blog."
 			logoHomeLink = "/"
 
-[menu]
-	[[menu.main]]
-	identifier = "about"
-	name = "About"
-	url = "/about"
-	[[menu.main]]
-	identifier = "stuff"
-	name = "My Stuff"
-	url = "/stuff"
+		[languages.en.menu]
+			[[languages.en.menu.nav]]
+				identifier = "home"
+				name = "Home"
+				url = "/"
+				weight = 10
+			[[languages.en.menu.nav]]
+				identifier = "about"
+				name = "About"
+				url = "/about"
+				weight = 20
+			[[languages.en.menu.nav]]
+				identifier = "stuff"
+				name = "My Stuff"
+				url = "/stuff"
+				weight = 30
+			[[languages.en.menu.nav]]
+				identifier = "blog"
+				name = "Blog"
+				url = "/posts"
+				weight = 40
+			
+			# links
+			[[languages.en.menu.link]]
+				link = "https://github.com/ezntek"
+				name = "GitHub"
+			
+
