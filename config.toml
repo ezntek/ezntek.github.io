@@ -56,29 +56,28 @@ baseurl = "/"
 
 		[languages.en.menu]
 			[[languages.en.menu.nav]]
-				identifier = "home"
 				name = "Home"
 				url = "/"
 				weight = 10
 			[[languages.en.menu.nav]]
-				identifier = "about"
 				name = "About"
 				url = "/about"
 				weight = 20
 			[[languages.en.menu.nav]]
-				identifier = "stuff"
 				name = "My Stuff"
 				url = "/stuff"
 				weight = 30
-			[[languages.en.menu.nav]]
-				identifier = "blog"
-				name = "Blog"
-				url = "/posts"
-				weight = 40
+			#[[languages.en.menu.nav]]
+			#	pre = ""
+			#	identifier = "blog"
+			#	name = "Blog"
+			#	url = "/posts"
+			#	weight = 40
 			
 			# links
 			[[languages.en.menu.link]]
 				link = "https://github.com/ezntek"
-				name = "GitHub"
+				name = "fa-github" # GitHub
+			
 			
 
