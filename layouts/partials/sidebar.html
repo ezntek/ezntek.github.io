@@ -6,7 +6,7 @@
         <ul>
             {{ range .Site.Menus.nav }}
             <li>
-                <a href="{{ .URL }}" style="display: inline;">{{ .Pre }}{{ .Name }}</a>
+                <button type="button" onclick="window.location.href='{{ .URL }}';" class="linkButton">{{ .Pre }}{{ .Name }}</button>
             </li>
             {{ end }}
         </ul>
@@ -16,7 +16,7 @@
         <h3>{{ i18n "sidebarLinks" }}</h3>
         <ul>
             {{ range .Site.Menus.link }}
-                <a href="{{ .URL }}" target="_blank" style="font-size: 20pt; display: inline;"><span><i class="fa {{ .Name }}"></i></span></a>
+                <button type="button" onclick="window.location.href='{{ .URL }}'" class="linkButton" style="display: inline; border-radius: 25pt; font-size: 22pt;"><span><i class="fa {{ .Name }}"></i></span></button>
             {{ end }}
         </ul>
     </div>
