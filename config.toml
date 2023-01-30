@@ -1,6 +1,6 @@
 languageCode = 'en-us'
 title = "ezntek's blog"
-theme = "fuji"
+theme = "PaperMod"
 baseurl = "/"
 
 [permalinks]
@@ -26,6 +26,14 @@ baseurl = "/"
 	enableGitInfo = true
 	updatedDatePrefix = "Updated"
 	paginate = 50
+
+	[params.homeInfoParams]
+	Title = "Hey, Welcome! 👋"
+	Content = "Welcome to my blog."
+
+	[[params.socialIcons]]
+	name = "github"
+	url = "https://github.com/ezntek"
 
 [markup.goldmark.renderer]
 	unsafe = true
@@ -55,29 +63,27 @@ baseurl = "/"
 			logoHomeLink = "/"
 
 		[languages.en.menu]
-			[[languages.en.menu.nav]]
+			[[languages.en.menu.main]]
 				name = "Home"
 				url = "/"
 				weight = 10
-			[[languages.en.menu.nav]]
+			[[languages.en.menu.main]]
 				name = "About"
 				url = "/about"
 				weight = 20
-			[[languages.en.menu.nav]]
+			[[languages.en.menu.main]]
 				name = "My Stuff"
 				url = "/stuff"
 				weight = 30
-			#[[languages.en.menu.nav]]
-			#	pre = ""
-			#	identifier = "blog"
-			#	name = "Blog"
-			#	url = "/posts"
-			#	weight = 40
+			[[languages.en.menu.nav]]
+				identifier = "blog"
+				name = "Blog"
+				url = "/posts"
+				weight = 40
 			
 			# links
 			[[languages.en.menu.link]]
 				url = "https://github.com/ezntek"
 				name = "GitHub" # GitHub
 			
-			
-
+[taxonomies]

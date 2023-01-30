@@ -2,16 +2,14 @@
 title = "Hello World"
 date = 2023-01-28T21:24:44+08:00
 author = "ezntek"
-tags = [""]
-keywords = ["", ""]
-description = "lueuhluihluihluihd *abc* **abc**"
+categories = ['Development & Coding']
+slug = "helloworld"
+tags = ["test", "blah"]
+ShowReadingTime = true
+ShowBreadCrumbs = true
+description = "lueuhluauywfydn"
 draft = false
 +++
-
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> <style> .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 50, 'opsz' 48 } </style>
-
-<span class="material-symbols-outlined"><a href="/">home</a></span>
-
 # Iamque precantum saucius
 ## Responsa dixit
 
