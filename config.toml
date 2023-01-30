@@ -26,14 +26,29 @@ baseurl = "/"
 	enableGitInfo = true
 	updatedDatePrefix = "Updated"
 	paginate = 50
+	ShowBreadCrumbs = true
+	ShowReadingTime = true
 
 	[params.homeInfoParams]
 	Title = "Hey, Welcome! 👋"
-	Content = "Welcome to my blog."
+	Content = "<strong>Introductions first: </strong>I'm Eason (aka ezntek), a 14-year-old Asian programmer living in 🇸🇬, and this is where I post semi-personal content in the form of a blog."
 
 	[[params.socialIcons]]
 	name = "github"
 	url = "https://github.com/ezntek"
+
+	[[params.socialIcons]]
+	name = "email"
+	url = "mailto:ezntek@xflymusic.com"
+
+	[[params.socialIcons]]
+	name = "reddit"
+	url = 'https://reddit.com/u/EasonTek2398'
+
+	[[params.socialIcons]]
+	name = "matrix"
+	url = "https://matrix.to/#/@eazonteck:matrix.org"
+
 
 [markup.goldmark.renderer]
 	unsafe = true
@@ -47,11 +62,11 @@ baseurl = "/"
 [languages]
 	[languages.en]
 		languageName = "English"
-		title = "ezntek's Site"
+		title = "ezntek"
 		subtitle = "My personal site."
 		owner = "ezntek"
 		keywords = ""
-		copyright = "Eason Qin 2023"
+		copyright = "Eason Qin 2023 - Present."
 		menuMore = "Show More"
 		readMore = "Read More"
 		readOtherPosts = "Read other posts"
@@ -74,16 +89,20 @@ baseurl = "/"
 			[[languages.en.menu.main]]
 				name = "My Stuff"
 				url = "/stuff"
-				weight = 30
-			[[languages.en.menu.nav]]
+				weight = 40
+			[[languages.en.menu.main]]
 				identifier = "blog"
 				name = "Blog"
 				url = "/posts"
-				weight = 40
+				weight = 30
+			[[languages.en.menu.main]]
+				identifier = "tags"
+				url = "/tags"
+				name = "Tags"
+				weight=50
 			
 			# links
 			[[languages.en.menu.link]]
 				url = "https://github.com/ezntek"
 				name = "GitHub" # GitHub
 			
-[taxonomies]

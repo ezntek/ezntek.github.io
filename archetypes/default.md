@@ -2,8 +2,7 @@
 title = "{{ replace .Name '-' ' ' | title }}"
 date = {{ .Date }}
 author = "ezntek"
-tags = [""]
-keywords = ["", ""]
+tags = []
 description = ""
 draft = true
 +++

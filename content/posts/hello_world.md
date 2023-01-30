@@ -2,15 +2,14 @@
 title = "Hello World"
 date = 2023-01-28T21:24:44+08:00
 author = "ezntek"
-categories = ['Development & Coding']
 slug = "helloworld"
-tags = ["test", "blah"]
-ShowReadingTime = true
-ShowBreadCrumbs = true
-description = "lueuhluauywfydn"
+tags = []
 draft = false
 +++
 # Iamque precantum saucius
+
+**This is just a lorem ipsum page to see if things are working.**
+
 ## Responsa dixit
 
 Lorem markdownum dubites in longas subde; ibi essem ducitur vitiaverat recessit
