@@ -1,4 +1,4 @@
-<script src="https://kit.fontawesome.com/ea6ea393e7.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <aside class="col-12 col-md-3 float-left sidebar">
     <!-- pages -->
     <div class="sidebar-item sidebar-pages">
@@ -16,7 +16,7 @@
         <h3>{{ i18n "sidebarLinks" }}</h3>
         <ul>
             {{ range .Site.Menus.link }}
-                <button type="button" onclick="window.location.href='{{ .URL }}'" class="linkButton" style="display: inline; border-radius: 25pt; font-size: 22pt;"><span><i class="fa {{ .Name }}"></i></span></button>
+                <button type="button" onclick="window.location.href='{{ .URL }}'" class="linkButton">{{ .Name }}</button>
             {{ end }}
         </ul>
     </div>

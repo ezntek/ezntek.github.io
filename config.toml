@@ -76,8 +76,8 @@ baseurl = "/"
 			
 			# links
 			[[languages.en.menu.link]]
-				link = "https://github.com/ezntek"
-				name = "fa-github" # GitHub
+				url = "https://github.com/ezntek"
+				name = "GitHub" # GitHub
 			
 			
 
