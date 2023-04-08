@@ -39,7 +39,7 @@ baseurl = "/"
 
 	[[params.socialIcons]]
 	name = "email"
-	url = "mailto:ezntek@xflymusic.com"
+	url = "mailto:eason@ezntek.com"
 
 	[[params.socialIcons]]
 	name = "reddit"
