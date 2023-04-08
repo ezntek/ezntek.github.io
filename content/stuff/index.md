@@ -1,3 +1,5 @@
 # What I've Built
 
-None for the moment. I have many WIP projects ready for release, just you guys wait.
+Here are some work-in-progress projects:
+
+ * [smbuilder](https://github.com/ezntek/smbuilder) Actively working on it (replacement of [this](https://github.com/ezntek/SM64LinuxLauncher-qt))
