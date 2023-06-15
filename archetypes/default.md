@@ -8,10 +8,10 @@ draft = true
 +++
 
 <script src="https://utteranc.es/client.js"
-        repo="ezntek.github.io"
-        issue-term="pathname"
-        label="utterances"
-        theme="preferred-color-scheme"
+        repo="ezntek/ezntek.github.io"
+        issue-term="title"
+        label="comments"
+        theme="github-dark"
         crossorigin="anonymous"
         async>
 </script>

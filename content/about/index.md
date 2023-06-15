@@ -1,11 +1,28 @@
 # About Me
 
-![Image of Me](/img/face.jpg)
+## who
 
 Hey, I'm Eason, otherwise known as eggman, eggy, eason(tech/tek)reviews, easontek and now, ezntek. I'm a 14-year-old programmer living in Singapore. 
 
-I am now a FreeBSD nerd, tracking -CURRENT on my primary machine and I also have a -RELEASE server running my nextcloud. I do always keep a Linux machine around, and in this case, I have Fedora Linux on a secondary hard drive on my computer and on my M1 MacBook Pro ([Asahi ](https://asahilinux.org) [Fedora Builder](https://github.com/leifliddy/asahi-fedora-builder)). I primarily code desktop and CLI programs (general utilities), and I am planning to get into frontend web development and/or backend (server) programming.
+## hobbies
+
+* coding
+* cooking
+
+## more info (more frequently updated)
+
+[here](https://github.com/ezntek)
+
+## why can't i code a lot?
+
+im a student.
+
+## what do i use
+I use NixOS on my workstation and Arch (btw) on my M1 MacBook Pro.
+_psst: i do use macOS on my mac a little more, as the [Asahi Linux](https://asahilinux.org) drivers need to mature for a bit._
 
 I have a Google Pixel 6a (bluejay) as my phone, running [LineageOS](https://lineageos.org) with [microG](https://microg.org) installed via root.
+
+## other
 
 I mainly code with this one specific person nowdays, [DaringCuteSeal / Pearl](https://daringcuteseal.xyz) (she's cool, check her stuff out), and we work on projects together, and she is the person who ~~forced~~ *inspired* me to start this blog.
