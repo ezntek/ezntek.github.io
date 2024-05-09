@@ -8,7 +8,7 @@ baseurl = "/"
 
 [params]
 	author = "ezntek"
-	description = "A 14-year-old asian programmer."
+	description = "A 15-year-old asian programmer."
 	subTitle = "ezntek's Site."
 	sourceURL = "https://github.com/ezntek/ezntek.github.io"
 	showLicense = true
@@ -31,7 +31,7 @@ baseurl = "/"
 
 	[params.homeInfoParams]
 	Title = "Hey, Welcome! 👋"
-	Content = "<strong>Introductions first: </strong>I'm Eason (aka ezntek), a 14-year-old Asian programmer living in 🇸🇬, and this is where I post semi-personal content in the form of a blog."
+	Content = "<strong>Introductions first: </strong>I'm Eason (aka ezntek), a 15-year-old Asian programmer living in 🇸🇬, and this is where I post semi-personal content in the form of a blog."
 
 	[[params.socialIcons]]
 	name = "github"
@@ -45,10 +45,6 @@ baseurl = "/"
 	name = "reddit"
 	url = 'https://reddit.com/u/EasonTek2398'
 
-	[[params.socialIcons]]
-	name = "matrix"
-	url = "https://matrix.to/#/@eazonteck:matrix.org"
-
 
 [markup.goldmark.renderer]
 	unsafe = true
@@ -61,17 +57,17 @@ baseurl = "/"
 
 [languages]
 	[languages.en]
-		languageName = "English"
-		title = "ezntek"
-		subtitle = "My personal site."
-		owner = "ezntek"
-		keywords = ""
-		copyright = "Eason Qin 2023 - Present."
-		menuMore = "Show More"
-		readMore = "Read More"
-		readOtherPosts = "Read other posts"
-		missingContentMessage = "Page not found..."
-		missingBackButtonLabel = "Back to home"
+                [languages.en.params]
+                    languageName = "English"
+                    title = "ezntek"
+                    subtitle = "My personal site."
+                    owner = "ezntek"
+                    copyright = "Eason Qin 2023 - Present."
+                    menuMore = "Show More"
+                    readMore = "Read More"
+                    readOtherPosts = "Read other posts"
+                    missingContentMessage = "Page not found..."
+                    missingBackButtonLabel = "Back to home"
 		
 		[languages.en.params.logo]
 			logoText = "ezntek's Blog."
@@ -79,20 +75,24 @@ baseurl = "/"
 
 		[languages.en.menu]
 			[[languages.en.menu.main]]
-				name = "Home"
+				name = "home"
 				url = "/"
 				weight = 10
 			[[languages.en.menu.main]]
-				name = "About"
+				name = "about"
 				url = "/about"
 				weight = 20
+                        [[languages.en.menu.main]]
+                                name = "revision"
+                                url = "/revision"
+                                weight = 25
 			[[languages.en.menu.main]]
-				name = "My Stuff"
+				name = "my stuff"
 				url = "/stuff"
 				weight = 40
 			[[languages.en.menu.main]]
 				identifier = "blog"
-				name = "Blog"
+				name = "blog"
 				url = "/posts"
 				weight = 30
 			[[languages.en.menu.main]]
