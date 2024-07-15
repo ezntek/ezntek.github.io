@@ -18,15 +18,15 @@
 }
 
 .dark {
-    --entry: #313244;
-    --theme: #1e1e2e;
-    --primary: #bac2de;
+    --entry: #363a4f;
+    --theme: #24273a;
+    --primary: #b8c0e0;
     --secondary: #a6adc8;
-    --tertiary: #9399b2;
-    --content: #cdd6f4;
-    --hljs-bg: #313244;
-    --code-bg: #585b70;
-    --border: #181825;
+    --tertiary: #a5adcb;
+    --content: #cad3f5;
+    --hljs-bg: #494d64;
+    --code-bg: #5b6078;
+    --border: #181926;
 }
 
 .list {

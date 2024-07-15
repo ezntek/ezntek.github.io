@@ -26,7 +26,7 @@ baseurl = "/"
 	enableGitInfo = true
 	updatedDatePrefix = "Updated"
 	paginate = 50
-	ShowBreadCrumbs = true
+	ShowBreadCrumbs = false
 	ShowReadingTime = true
 
 	[params.homeInfoParams]
@@ -98,7 +98,7 @@ baseurl = "/"
 			[[languages.en.menu.main]]
 				identifier = "tags"
 				url = "/tags"
-				name = "Tags"
+				name = "tags"
 				weight=50
 			
 			# links
