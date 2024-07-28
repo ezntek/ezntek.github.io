@@ -189,7 +189,7 @@ I went to the library instead, where we were told to go. At this point, I had
 absolutely no idea as to what I would build. I wanted to use Rust+GTK+Libadwaita
 at first, but due to the theme being so incredibly vague, it would be completely
 useless to build something with it. Additionally, this framework is considerably
-harder than using web development, because it uses completely foreign concepts.
+harder than doing web development, because it uses completely foreign concepts.
 GTK usually recommends you to write XML to describe your components, and include
 it in your Rust project as a resource. However, styling and positioning would
 also be difficult due to GTK CSS being limited and components (widgets) being a
@@ -198,14 +198,14 @@ pain in general. One could also not subclass a GObject and therefore a
 I ultimately decided against it.
 
 I was back to square one. At this point, I really didn't know what I wanted to
-do. I could make a game in C and raylib, but game development would be my
+do. I could make a game in C and [raylib](https://raylib.com), but game development would be my
 downfall because I'd have to make art. A graphics library would also be a pain
 overall, and if I wanted any chance of winning, I would have to learn and
 therefore master a game engine.
 
 There was only really one option left for me, which is web development. I had
 actually feared this before the event, so I did some practice beforehand with
-Vue.js, but not nearly enough for a full app. That means that if I didn't want
+[Vue.js](vuejs.org), but not nearly enough for a full app. That means that if I didn't want
 to be a disappointment, I would have to basically master the basics of Vue while
 in the Hackathon.
 
