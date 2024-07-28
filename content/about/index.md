@@ -9,6 +9,7 @@ Hey, I'm Eason, otherwise known as eggman or ezntek. I'm a 15-year-old programme
  * rust
  * C
  * Python
+ * Vue.js and TypeScript (to an extent)
  * C++ (to an extent)
  * Java (to an extent)
 
@@ -33,9 +34,9 @@ I use:
 |computer|operating system|
 |-|-|
 |ThinkPad X200|Artix Linux (dinit)|
-|First ThinkPad X230 (i5)|CachyOS xfce|
+|First ThinkPad X230 (i5)|Arch Linux|
 |Second ThinkPad X230 (i7)|Artix Linux (dinit)|
-|ThinkPad T410|Microsoft® Windows 10 LTSC Enterprise (tiny10)|
-|ThinkPad T440p|No Hard drive (its dead)|
+|ThinkPad T410|Debian sid|
+|ThinkPad T440p|Artix Linux (dinit)|
 |ThinkPad T480|Artix Linux (dinit)|
-|Workstation|CachyOS Hyprland (custom) (about to hop)|
+|Workstation|Artix Linux (dinit)|
