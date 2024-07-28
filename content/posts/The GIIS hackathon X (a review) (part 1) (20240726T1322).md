@@ -59,12 +59,12 @@ was wrong.
 I wouldn't really call this a line, but I'd actually call this a crowd.
 
 A really packed one. Nobody seemed to know what line up meant (I mean, they were
-all small children, but that's beside the point). The workers and even some
+all small children, but that's besides the point). The workers and even some
 adult had to yell at the crowd collectively and tell them to get into 3 lines.
 What formed were three distinct enough crowds, loosely bunched up. Everybody
 seemed to cut the queue, and nothing was done. Finally, some organizer decided
 to ask a bunch of people if they had registered yet, and directed them to
-counters and helped the line move along. I was one of those people and i was
+counters and helped the line move along. I was one of those people and I was
 told to go to the leftmost counter, with a group already doing their
 registration.
 
@@ -140,7 +140,7 @@ older programmers to form our own events, if it suited us ;)
 
 ### The Theme
 
-Life on all elements. More on this later.
+Life on all elements. More on my brainstorming later.
 
 ### The Rubric
 
