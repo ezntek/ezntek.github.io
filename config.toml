@@ -15,6 +15,7 @@ baseurl = "/"
 	license = "the Creative Commons BY-NC-SA 4.0 License"
 	licenseLink = "http://creativecommons.org/licenses/by-nc-sa/4.0/"
 	#avatar = ""
+        showFullTextinRSS = true
 
 	contentTypeName = "posts"
 	showMenuItems = 3
@@ -45,6 +46,12 @@ baseurl = "/"
 	name = "reddit"
 	url = 'https://reddit.com/u/EasonTek2398'
 
+        [[params.socialIcons]]
+        name = "rss"
+        url = "index.xml"
+
+[outputs]
+home = ["HTML", "RSS", "JSON"]
 
 [markup.goldmark.renderer]
 	unsafe = true
