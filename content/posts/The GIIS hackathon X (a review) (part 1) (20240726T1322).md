@@ -167,8 +167,8 @@ to use tools like [Scratch](https://scratch.mit.edu) and
 general, so they weren't allowed scratch, but by the end, nobody actually used
 it (which is a good thing.)
 
-I was placed into the senior team. I saw my fellow students from places far and
-wide there, which were also placed into the senior team. I genuinely believed
+I was placed into the senior team. I saw my fellow students [from places far and
+wide there][#footnotes], which were also placed into the senior team. I genuinely believed
 that they, or the older kids would do better than me, as my self-confidence
 wasn't too high at the time of me joining. I did not know any sort of toolkit or
 framework that I could use to create a product, so I kinda had to raw-dog it.
