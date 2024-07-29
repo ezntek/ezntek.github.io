@@ -12,7 +12,10 @@ draft = false
 If you haven't checked the first article out, please do [here](https://ezntek.com/posts/the-giis-hackathon-x-a-review-part-1-20240726t1322/). 
 
 This article will cover mainly the events on day one, along other appropriate
-stories fit for this article.
+stories fit for this article. Source code shown is in the state that it is
+in right now (i.e. the complete app). I only set up git later on in the
+development process due to time reasons. Some components may not be explained,
+that is to be expected.
 
 In summary, I thought the campus that the event was held in was pretty cool in 
 all, and gave off some heavy hospital vibes. Despite the very late start and
@@ -203,6 +206,102 @@ By the end of session 2, I had finished what the bubble was supposed to look
 like, but only one (the one that says Vegetarian). Unfortunately I do not
 have screenshots or a commit from when I finished that. Sorry ._.
 
+### More Vue
+
+The component is very simple. It looks like this:
+
+```
+<script lang="ts" setup>
+import type { Diet as DietT } from '@/types'
+import { Diet } from '@/types'
+import { far } from '@fortawesome/free-regular-svg-icons'
+import { fas } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+
+// Component properties: TS+Vue allows one to pass an iface in as a generic type argument to define props.
+interface Props {
+    diet: DietT
+    showTick: boolean
+}
+
+defineProps<Props>()
+
+// Reactive state
+</script>
+
+<template>
+    <div
+        class="diet-bubble-container"
+        :class="$props.showTick ? 'diet-bubble-container-green' : 'diet-bubble-container-blue'"
+    >
+        <span class="diet-bubble-container-icon">
+            <!-- using Vue's v-if/v-else-if/v-else directives to do conditional rendering -->
+            <FontAwesomeIcon v-if="$props.diet == Diet.Vegetarian" :icon="fas.faLeaf" />
+            <FontAwesomeIcon v-else-if="$props.diet == Diet.LactoVegetarian" :icon="fas.faCow" />
+            <FontAwesomeIcon v-else-if="$props.diet == Diet.OvoVegetarian" :icon="fas.faEgg" />
+            <FontAwesomeIcon v-else-if="$props.diet == Diet.Vegan" :icon="fas.faSeedling" />
+            <FontAwesomeIcon v-else-if="$props.diet == Diet.NonVegetarian" :icon="fas.faBacon" />
+            <FontAwesomeIcon v-else-if="$props.diet == Diet.Pescetarian" :icon="fas.faFish" />
+        </span>
+        <span class="diet-bubble-container-diet-name">{{ $props.diet }}</span>
+        <FontAwesomeIcon
+            v-if="$props.showTick"
+            :icon="far.faSquarePlus"
+            class="diet-bubble-container-x-icon"
+            style="color: var(--vt-c-white-soft)"
+        />
+    </div>
+</template>
+
+```
+
+This is excluding the CSS, of course (covered in the netx article).
+It simply renders 2 span elements, one with a font awesome icon that is 
+conditionally rendered based on the enum's state, and the other is just the
+enum name. I also included an icon that would pop up on hover, if a property
+`showTick` is set.
+
+```
+<DividerItem>Your diet is:</DividerItem>
+<div class="diet-container">
+    <DietBubble :diet="selectedDiet" :showTick="false" />
+</div>
+
+<br />
+
+<DividerItem>Or set your diet:</DividerItem>
+<div class="all-diets-container" v-for="(diet, index) in diets" :key="index">
+    <button class="null-button" @click="setCurrentDiet(diet)">
+        <DietBubble :diet="diet" :showTick="true" v-if="diet != selectedDiet" />
+    </button>
+</div>
+```
+
+I made a class `null-button` which is basically a button with all the properties
+unset so I could put a div in it AND use the `@click` event handler just fine.
+
+I would render every possible diet (which is preset in the `diets` array) with the
+`v-for` directive, and if the `DietBubble` is clicked I would call `setCurrentDiet`
+with the diet the button is displaying. It is a closure that looks like this:
+
+```ts
+const setCurrentDiet = (diet: Diet) => {
+    selectedDiet.value = diet
+    window.localStorage.setItem('diet', diet)
+}
+
+```
+
+I used an arrow function (a closure) because you can capture the surrounding values
+just fine. In the end, clicking a diet bubble saves its state in local storage and
+displays it (through the reactive variable `selectedDiet`) Easy!
+
+
+<video controls>
+    <source src="/img/hackathon/settingsdemo.mp4" type="video/mp4">
+</video>
+
+
 ## Dinner
 
 We were called to dinner at 7. Again, it was served on level 4. This time, I
@@ -261,7 +360,7 @@ a mention.
 
 
 I'm also ending this article early because there's still a lot to talk about. However,
-I have already gotten to >1700 words (according to neovim at least), so I'll discuss
+I have already gotten to >1900 words (according to neovim at least), so I'll discuss
 the second day and other such things in the next and most likely last article.
 
 Stay tuned.
