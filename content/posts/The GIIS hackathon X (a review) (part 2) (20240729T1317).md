@@ -214,7 +214,7 @@ the counter into the corridor; luckily they had 2 lines for crowd control.
 
 After I claimed my food, I was actually not surprised that served us...
 
-[Pizza Hut](/img/hackathon/pizzahut.jpg)
+![Pizza Hut](/img/hackathon/pizzahut.jpg)
 
 _Pizza Hut_. Cheaper than catering I guess...and it's free! Can't complain too
 much I guess-
@@ -222,7 +222,9 @@ much I guess-
 As you probably already figured, this school does have 2 canteens, the level 3
 and the level 4 one. Here's the latter:
 
-![Video of the canteen](/img/hackathon/canteen-compressed.mp4)
+<video width="50%" controls>
+    <source src="/img/hackathon/canteen-compressed.mp4" type="video/mp4">
+</video>
 
 _Video compressed to save space_
 
