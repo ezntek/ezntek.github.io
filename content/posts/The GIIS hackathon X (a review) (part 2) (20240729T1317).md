@@ -80,7 +80,7 @@ But while I enjoyed that piping hot samosa for 2 dollars (I think)
 
 _See, this samosa was made by following a set of instructions, a recipe.
 Written down or not, it was processed by somebody's brain and those
-instructions were followed to make delicious food_
+instructions were followed to make delicious food._
 
 Yet, I thought, we aren't cows or sheep. We must prepare our ingredients in
 such a way that we can taste it, such that we can enjoy it and use its
