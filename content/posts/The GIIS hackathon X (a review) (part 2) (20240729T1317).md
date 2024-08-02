@@ -297,7 +297,7 @@ just fine. In the end, clicking a diet bubble saves its state in local storage a
 displays it (through the reactive variable `selectedDiet`) Easy!
 
 
-<video controls>
+<video controls width="100%">
     <source src="/img/hackathon/settingsdemo.mp4" type="video/mp4">
 </video>
 
@@ -364,6 +364,8 @@ I have already gotten to >1900 words (according to neovim at least), so I'll dis
 the second day and other such things in the next and most likely last article.
 
 Stay tuned.
+
+***UPDATE:*** [Here's](https://ezntek.com/posts/the-giis-hackathon-x-a-review-part-3-20240801t1539/) the next part.
 
 ## footnotes
 

@@ -214,6 +214,9 @@ event, along with all the other fun things offered alongside it in the next
 article. At around 1,900 words, this is already a really long article. I
 promise, the next one will be just as good if not miles ahead of this one.
 
+***UPDATE:*** [here](https://ezntek.com/posts/the-giis-hackathon-x-a-review-part-2-20240729t1317/) is the
+next post.
+
 ## Random things I heard
 
 > Some adult: Oh, you joined the hackathon as a participant?
