@@ -3,7 +3,7 @@ title = "The GIIS Hackathon X - My Experience (part 3)"
 date = 2024-08-01T15:39:11+08:00
 author = "ezntek"
 tags = ["life", "programming"]
-description = "All for nothing?"
+description = "More vue."
 draft = false
 +++
 
