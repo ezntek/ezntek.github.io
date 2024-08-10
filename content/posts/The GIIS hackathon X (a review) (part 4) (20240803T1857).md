@@ -633,8 +633,17 @@ To the photographer who took this photo, please take a look at this:
 
 (do not meme me)
 
+## MY USERNAME
 
+ITS EZNTEK. yeah right.
 
+E as in Feed.
+ZN as in Zin, with an I. Similar to the Sin in Singapore.
+TEK as in Tech.
+
+No capitalization required. Pronouncing it 
+
+\/ɛznt̪ɛk\/ is a bit of a crime. sorry-
 
 <script src="https://utteranc.es/client.js"
         repo="ezntek/ezntek.github.io"
