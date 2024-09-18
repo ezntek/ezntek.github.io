@@ -10,3 +10,6 @@ Note: some of these may be work-in-progress.
 * [dotfiles](https://github.com/ezntek/dotfiles) my dotfiles
 * [askme-rs](https://github.com/DaringCuteSeal/askme-rs)
 
+## SITAKU!!
+
+Not mine, technically, but I'll put it [here](/sitaku) for now.

@@ -92,21 +92,21 @@ home = ["HTML", "RSS", "JSON"]
                         [[languages.en.menu.main]]
                                 name = "revision"
                                 url = "/revision"
-                                weight = 25
-			[[languages.en.menu.main]]
-				name = "my stuff"
-				url = "/stuff"
-				weight = 40
+                                weight = 30
 			[[languages.en.menu.main]]
 				identifier = "blog"
 				name = "blog"
 				url = "/posts"
-				weight = 30
+				weight = 40
+			[[languages.en.menu.main]]
+				name = "my stuff"
+				url = "/stuff"
+				weight = 50 
 			[[languages.en.menu.main]]
 				identifier = "tags"
 				url = "/tags"
 				name = "tags"
-				weight=50
+				weight = 70
 			
 			# links
 			[[languages.en.menu.link]]
