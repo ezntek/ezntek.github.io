@@ -13,7 +13,9 @@ _LibreOffice does not know my full name. What a shame!_
 
 ## DOWNLOAD
 
-[Revision One](https://ezntek.com/doc/pseudocodereference_rev1.pdf)
+[Revision Two](https://ezntek.com/doc/pseudocodereference_rev2.pdf)
+
+_Revision two fixed minor syntax highlighting errors, and added details to the Python half of the functions section for consistency._
 
 ## What???
 
