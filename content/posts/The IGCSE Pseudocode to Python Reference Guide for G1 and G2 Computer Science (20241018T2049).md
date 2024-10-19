@@ -13,9 +13,10 @@ _LibreOffice does not know my full name. What a shame!_
 
 ## DOWNLOAD
 
-[Revision Two](https://ezntek.com/doc/pseudocodereference_rev2.pdf)
+[Revision Three](https://ezntek.com/doc/pseudocodereference_rev3.pdf)
 
 _Revision two fixed minor syntax highlighting errors, and added details to the Python half of the functions section for consistency._
+_Revision three added a License, the CC-BY-SA-ND 4.0 International License. **all previous versions are also licensed under the same license, if you have it**_.
 
 ## What???
 
