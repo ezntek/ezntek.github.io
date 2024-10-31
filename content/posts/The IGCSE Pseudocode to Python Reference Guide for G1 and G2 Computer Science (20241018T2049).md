@@ -13,11 +13,12 @@ _LibreOffice does not know my full name. What a shame!_
 
 ## DOWNLOAD
 
-[Revision Four](https://ezntek.com/doc/pseudocodereference_rev4.pdf)
+[Revision Five](https://ezntek.com/doc/pseudocodereference_rev5.pdf)
 
 _Revision two fixed minor syntax highlighting errors, and added details to the Python half of the functions section for consistency._
 _Revision three added a License, the CC-BY-SA-ND 4.0 International License. **all previous versions are also licensed under the same license, if you have it**_.
 _Revision four fixed inconsistencies in the notes, and fixed minor syntax highlighting errors_.
+_Revision five fixed an error in the for loops section where I iterate from a list beginning from 1 not 0_.
 
 ## What???
 
