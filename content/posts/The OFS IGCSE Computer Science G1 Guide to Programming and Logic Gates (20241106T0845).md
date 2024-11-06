@@ -9,7 +9,7 @@ draft = false
 
 ## DOWNLOAD
 
-* [The OFS IGCSE Computer Science G1 Guide to Programming and Logic Gates](https://ezntek.com/doc/CSRG_G1_Rev1.pdf)
+* [The OFS IGCSE Computer Science G1 Guide to Programming and Logic Gates, Revision Two](https://ezntek.com/doc/CSRG_G1_Rev2.pdf)
 
 ## What is this?
 
