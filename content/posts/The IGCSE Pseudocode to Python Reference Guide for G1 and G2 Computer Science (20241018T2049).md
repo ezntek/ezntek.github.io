@@ -21,7 +21,7 @@ _Revision four fixed inconsistencies in the notes, and fixed minor syntax highli
 
 Revision five fixed an error in the for loops section where I iterate from a list beginning from 1 not 0
 
-Revision six fixed errors relating to if statements.
+Revision six fixed errors relating to if statements and arrays
 
 ## What???
 
