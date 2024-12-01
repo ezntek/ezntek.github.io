@@ -9,7 +9,7 @@ draft = false
 
 ## DOWNLOAD
 
- * [The OFS IGCSE Computer Science G2 Exam Revision Reference Guide, Revision Three](https://ezntek.com/doc/CSRG_G2_Rev3.pdf)
+ * [The OFS IGCSE Computer Science G2 Exam Revision Reference Guide, Revision Four](https://ezntek.com/doc/CSRG_G2_Rev4.pdf)
 
 ## After much anticipation...
 
