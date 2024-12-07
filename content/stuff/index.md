@@ -1,14 +1,18 @@
 # What I've Built
 
-Note: some of these may be work-in-progress.
+***NOTE: this is extremely out of date! might as well check out my [GitHub.](https://github.com/ezntek)***
 
-* [beanbattery](https://github.com/BeanwareHQ/beanbattery)
-* [youareanidiot](https://github.com/ezntek/youareanidiot)
-* [mathparser](https://github.com/ezntek/mathparser)
-* [cursython](https://github.com/ezntek/cursython)
+* [brickout](https://github.com/ezntek/brickout) (wip ig)
+* [beancode](https://github.com/ezntek/beancode) (wip)
+* [tpfanspeed](https://github.com/ezntek/tpfanspeed) (will rewrite in C)
+* [dictionaryparser](https://github.com/ezntek/dictionaryparser) (will write web app)
+* [whowlang](https://github.com/ezntek/whowlang) (will definitely rewrite and rename)
+* [beanbattery](https://github.com/BeanwareHQ/beanbattery) (stale)
+* [youareanidiot](https://github.com/ezntek/youareanidiot) (stale)
+* [mathparser](https://github.com/ezntek/mathparser) (unfinished)
+* [cursython](https://github.com/ezntek/cursython) (bullshit)
 * [n64romconvert](https://github.com/ezntek/n64romconvert)
 * [dotfiles](https://github.com/ezntek/dotfiles) my dotfiles
-* [askme-rs](https://github.com/DaringCuteSeal/askme-rs)
 
 ## SITAKU!!
 
