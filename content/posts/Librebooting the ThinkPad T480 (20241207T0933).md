@@ -328,7 +328,7 @@ They then told me void was a supported distro, so I tried it again. **Same error
 
 at that point, even leah became confused, so they decided it was a good idea to clone a fresh lbmk tree[^1].
 
-Turns out she made a commit that tried to do a shortcut to copy me.bin, but that didnt work! one local `git revert` later, it built!
+Turns out they made a commit that tried to do a shortcut to copy me.bin, but that didnt work! one local `git revert` later, it built!
 
 ## Back to compiling libreboot
 
