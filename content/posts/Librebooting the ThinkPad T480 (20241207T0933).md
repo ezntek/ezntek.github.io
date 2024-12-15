@@ -39,7 +39,7 @@ _**you need:**_
 
 <img src="/img/lb_t480/soic8.jpg" alt="a SOIC-8 clip" width="70%" />
     
- 2. Some sort of thing that allows you to run a serial programmer on it. I use a Raspberry Pi Pico W for this, I just had it lying around one day.
+ 2. Some sort of thing that allows you to run a serial programmer on it. I used a Raspberry Pi Pico W for this, I just had it lying around one day.
 
     <div style="display: flex; column-gap: 0.7em;" >
         <img src="/img/lb_t480/picow_front.jpg" alt="Pico W front" width="35%" />
@@ -54,16 +54,9 @@ _**you need:**_
     
     <img src="/img/lb_t480/spudger.jpg" alt="a spudger" width="70%" />
 
-Together they form this, my _BIOS flashing jig._
-
-<div style="display: flex; column-gap: 0.7em;">
-    <img src="/img/lb_t480/biosjig_front.jpg" alt="my BIOS flashing jig (front)" width="35%" />
-    <img src="/img/lb_t480/biosjig_back.jpg" alt="my BIOS flashing jig (back)" width="35%" />
-</div>
-
 ## Update the stock BIOS
 
-The process is relatively simple. ***I assume that you are already on some Linux distribution or a BSD, if you are on windows, you can do it via the EXE file***.
+The process is relatively simple. ***I assume that you are already on some Linux distribution or a BSD, if you are on Windows, you can do it via the EXE file***.
 
 Head over [here](https://pcsupport.lenovo.com/us/en/products/laptops-and-netbooks/thinkpad-t-series-laptops/thinkpad-t480-type-20l5-20l6/downloads/ds502355), and choose the ISO download.
 
@@ -92,7 +85,7 @@ Do replace the downloaded ISO path with the actual path to your ISO.
 
 Write it to a USB stick however you want, I use dd:
 
-(this command is ran as root)
+(this command should be as root)
 
 ```
 dd if=t480_bios_update.img of=/dev/sdX bs=4M conv=fsync status=progress
@@ -143,9 +136,13 @@ Here's a table:
 |HOLD    |7              |Unused   |Unused               |
 |VCC     |8              |3V3      |36                   |
 
-after wiring, your pico should look something like this (my pi pico W has headers on it, but it isn't the pico WH):
+After wiring, they form this, what I'd like to call my _BIOS flashing jig._
 
-<img src="/img/lb_t480/biosjig_back.jpg" alt="wiring of the BIOS jig (back)" width="70%" />
+<img src="/img/lb_t480/biosjig_front.jpg" alt="my BIOS flashing jig (front)" width="35%" />
+
+The back sohuld look something like this:
+
+<img src="/img/lb_t480/biosjig_back.jpg" alt="my BIOS flashing jig (back)" width="35%" />
 
 ### Taking some dumps
 
@@ -207,9 +204,9 @@ and followed the instructions on the site.
 
 I had used lbmk before, so I did not need to `./mk dependencies arch` (I was building on my Artix god-PC, with an i7-14700KF. I really did not want to build it on one of my older ThinkPads).
 
-Like a good and sane person who likes _reading the fucking manuals™_, I _read the fucking manuals™_.
+Like a good and sane person who likes _reading the f\*\*\*\*\*g manuals™_, I _read the f\*\*\*\*\*g manuals™_.
 
-This is what the guide said after I read all the other sections
+This is what the guide said after I read all the other sections:
 
 > ## Build ROM image from source
 >
@@ -221,7 +218,7 @@ This is what the guide said after I read all the other sections
 > ```
 > NOTE: The T480 and T480S may be similar, but they do have several critical differences in their wiring, so you MUST flash the correct image. Please choose one of the above build targets accordingly.
 
-I was aware of the pitfalls, like no thunderbolt, no brightness keys, etc. But due to all this prep, I continued anyways.
+I was aware of the pitfalls, like no thunderbolt, no brightness keys, etc. But due me having done all this prep (and me generally loving libreboot as a project), I continued anyways.
 
 I issued
 
@@ -294,15 +291,15 @@ Here were the things they told me:
 2. Install dependencies (but I already installed them!)
 3. Install dependencies again (but I just did a full system update?)
 
-I think at that point, everyone was clueless. I could tell that `fuel` (a mod) was a bit clueless and started asking `leah`. They did eventually discover that I used artix and not arch, and they immediately denied further assistance (expected, they are 2 different distros, arch supported and artix not).
+I think at that point, everyone was clueless. I could tell that `fuel` (a mod) was a bit clueless and started asking `leah`. They did eventually discover that I used Artix and not arch, and they immediately denied further assistance (expected, they are 2 different distros, arch supported and Artix not).
 
-But I was still skeptical. Those distros literally share the same repo (at least I made it do so), and I have successfully used `lbmk` on artix once or twice before. Still, no luck.
+But I was still skeptical. Those distros literally share the same repos (at least I made it do so), and I have successfully used `lbmk` on Artix once or twice before. Still, no luck.
 
 ### PSA
 
 Don't paste raw output on IRC! horrible idea, you will get people barking at you. I did not know, but they could have reminded me a little better (because I am not an IRC user!!)
 
-Just use pastebin
+Just use pastebin—
 
 ### Back to IRC shenanigans
 
@@ -310,7 +307,7 @@ They began telling me to try it on debian. I said that I did not want to and I w
 
 I then started bargaining, which really does make sense in this case. Sure, it is an unsupported distro, but why are the dependencies causing `me.bin` to not be present? the typical process for obtaining any ME dump would be
 
-1. somehow get an official BIOS image (in this case, download
+1. somehow get an official BIOS image (in this case, download)
 2. chop the rom up to extract the binary
 3. copy it to `vendorfiles/t480`
 
@@ -371,14 +368,15 @@ In terms of using the T480 (for buyers who want to try it out):
  * **Get 16GB of RAM**: tihs is basically a given, make sure you have at least 16. 8 will bottleneck the CPU, and 32 is too much for ost tasks.
  * If youre lucky and get a T480 with the 2280 SSD bracket, you will see a boost in disk speeds, but if you only do tasks such as office work/programming, a normal SATA SSD will have an identical performance. If you want, you can put an ***M.2 A+E key 2242 SSD*** into the WWAN slot for extra storage.
  * ***AVOID TN PANELS LIKE THE PLAGUE***: If buying used and you are not planning to upgrade the panel, please avoid the TN panels, because they will make your T480 experience horrendous and near unbearable. I recommend the following panels if you upgrade it:
-   * NV140FHM-N61: **no mounting brackets**, has enough clearance and is 100%sRGB, 30pin eDP, non-touch, IGZO low power, 400 nit and is 1920x1080. Supports 60 and 48hz and is quite bright
-   * N140HCG-GQ2/GR2: **no mounting brackets**, has enough clearance, 100%sRGB, 30pin eDP, non-touch, IGZO, has pretty damn bad backlight bleed, is 400 nit but quite dim, and is 1920x1080.
-   * B140HAN01.0/.1/.2/.3: has mounting brackets, has enough clearance, and is 45%NTSC, 30pin eDP, non-touch, not low power, 250~300 nits and is 1920x1080. Colors are quite washed out and is okay-bright. All "compatible" panels are acceptable, much better than a TN.
+   * NE140FHM-N62: **no mounting brackets**, has enough clearance and is 96%DCI-P3 (1.07 billion colors!), 30 pin eDP, non-touch, IGZO low power, 500 nit and is 1920x1080. It should have 60 and 48hz support. I have not tested it, but in theory this should be the best panel.
+   * NE140FHM-N61: **no mounting brackets**, has enough clearance and is 100%sRGB, 30pin eDP, non-touch, IGZO low power, 400 nit and is 1920x1080. Supports 60 and 48hz and is quite bright. I have tested this one.
+   * N140HCG-GQ2/GR2: **no mounting brackets**, has enough clearance, 100%sRGB, 30pin eDP, non-touch, IGZO, has pretty damn bad backlight bleed, is 400 nit but quite dim, and is 1920x1080. I have tested this one.
+   * B140HAN01.0/.1/.2/.3: has mounting brackets, has enough clearance, and is 45%NTSC, 30pin eDP, non-touch, not low power, 250~300 nits and is 1920x1080. Colors are quite washed out and is okay-bright. All "compatible" panels are acceptable, much better than a TN. I have tested the B140HAN01.3 and the N140HCE-EAA (a compatible).
    
-   you could go for more exotic options, like the NV140FHM-N62, or even 2/4k panels like the B140QAN02.0 (which I used, but swapped out, because it has clearance issues and creates 2 bulges on the bezel. Colors are amazing though). Any panel higher than 1080p requires a 40 pin cable; and swapping the cable out is quite painful as you have to disassemble the hinge.
+   you could go for more exotic options, including 2.5k panels like the B140QAN02.0 (which I used, but swapped out, because it has clearance issues and creates 2 bulges on the bezel. Colors are amazing though) or 4k ones. Any panel higher than 1080p requires a 40 pin cable; and swapping the cable out is quite painful as you have to disassemble the hinge.
 
  * Do the glass trackpad mod if you like using the trackpad.
- * **Make sure you have the internal battery!** the PowerBridge system is extremely useful, and even if you do not intend to hotswap batteries, the extra mileage you get is quite important at times. I have a 72wH (in reality, 68 due to it being aftermarket) external 6 cell and an internal 24wH 3 cell, which gives me 9 total cells around ~90wH. My T480 did not even come with an internal battery because Lenovo did not ship these batteries in colder countries due to _chemistry™ reasons_.
+ * **Make sure you have the internal battery!** the PowerBridge system is extremely useful, and even if you do not intend to hotswap batteries, the extra mileage you get is quite important at times. I have a 72wH (in reality, 68 due to it being aftermarket) external 6 cell and an internal 24Wh 3 cell, which gives me 9 total cells around ~90wH. My T480 did not even come with an internal battery because Lenovo did not ship these batteries in colder countries due to _chemistry™ reasons_.
 
 For daily tasks, the T480 smashes all of them, and most definitely can handle video editing, even with just the iGPU. Speaking of which, it gets over 80fps on 22 ren/22 sim chunks medium settings with sodium in a Minecraft Singleplayer world. It is portable, quite light, definitely 1-handable and is a great daily driver.
 
