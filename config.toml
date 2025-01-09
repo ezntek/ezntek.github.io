@@ -8,7 +8,7 @@ baseurl = "/"
 
 [params]
 	author = "ezntek"
-	description = "A 15-year-old asian programmer."
+	description = "A 16-year-old asian programmer."
 	subTitle = "ezntek's Site."
 	sourceURL = "https://github.com/ezntek/ezntek.github.io"
 	showLicense = true
