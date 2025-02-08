@@ -34,19 +34,19 @@ baseurl = "/"
 	Title = "Hey, Welcome! 👋"
 	Content = "<strong>Introductions first: </strong>I'm Eason (aka ezntek), a 16-year-old Asian programmer living in 🇸🇬, and this is where I post semi-personal content in the form of a blog."
 
-	[[params.socialIcons]]
+	[[params.social.socialIcons]]
 	name = "github"
 	url = "https://github.com/ezntek"
 
-	[[params.socialIcons]]
+	[[params.social.socialIcons]]
 	name = "email"
 	url = "mailto:eason@ezntek.com"
 
-	[[params.socialIcons]]
+	[[params.social.socialIcons]]
 	name = "reddit"
 	url = 'https://reddit.com/u/EasonTek2398'
 
-        [[params.socialIcons]]
+        [[params.social.socialIcons]]
         name = "rss"
         url = "index.xml"
 
