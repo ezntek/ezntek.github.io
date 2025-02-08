@@ -31,7 +31,7 @@ What's so sweet about 16?
 
 I'd like to reminisce over the things I was able to pull off in the past year.
 
-1. Completely unrelated, but my age is now `0b1000`, it no longer fits in a 4 byte register.
+1. Completely unrelated, but my age is now `0b1000`, it no longer fits in a 4 bit register.
 2. I won second place in a hackathon, doing web development (something I never do) in a toolkit i have never touched previously (Vue).
 3. I got very good at C, and convinced a good amount of my friends to either look into C or to learn C. I have made many projects in the language, one is in the works, namely [askthing](https://github.com/ezntek/askthing).
 4. I taught C at school in the form of a club. 2 of my "students" are now programming in C for fun and enjoying it.
