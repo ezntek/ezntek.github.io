@@ -1,5 +1,5 @@
 +++
-title = "IGCSE Computer Science: Arrays and Iteration Workbook (20250208T2108)"
+title = "IGCSE Computer Science: Arrays and Iteration Workbook"
 date = 2025-02-08T21:08:06+08:00
 author = "ezntek"
 tags = [ "revision", "programming" ]
