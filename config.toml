@@ -1,5 +1,5 @@
 languageCode = 'en-us'
-title = "ezntek's blog"
+title = "ezntek's site"
 theme = "PaperMod"
 baseurl = "/"
 
@@ -9,7 +9,7 @@ baseurl = "/"
 [params]
 	author = "ezntek"
 	description = "A 16-year-old asian programmer."
-	subTitle = "ezntek's Site."
+	subTitle = "ezntek's site"
 	sourceURL = "https://github.com/ezntek/ezntek.github.io"
 	showLicense = true
 	license = "the Creative Commons BY-NC-SA 4.0 License"
@@ -32,19 +32,19 @@ baseurl = "/"
 
 	[params.homeInfoParams]
 	Title = "Hey, Welcome! 👋"
-	Content = "<strong>Introductions first: </strong>I'm Eason (aka ezntek), a 16-year-old Asian programmer living in 🇸🇬, and this is where I post semi-personal content in the form of a blog."
+	Content = "<strong>Introductions first: </strong>I'm ezntek (or Eason), a 16-year-old programmer living in 🇸🇬, and this is where I post both technical and personal content in the form of a blog. <br><br> Check out the personal blog or revision tabs on the top right if that's what you're looking for."
 
 	[[params.socialIcons]]
 	name = "github"
 	url = "https://github.com/ezntek"
 
 	[[params.socialIcons]]
-	name = "email"
-	url = "mailto:eason@ezntek.com"
-
-	[[params.socialIcons]]
 	name = "reddit"
 	url = 'https://reddit.com/u/EasonTek2398'
+
+	[[params.socialIcons]]
+	name = "email"
+	url = "mailto:eason@ezntek.com"
 
         [[params.socialIcons]]
         name = "rss"
@@ -66,7 +66,7 @@ home = ["HTML", "RSS", "JSON"]
 	[languages.en]
                 [languages.en.params]
                     languageName = "English"
-                    title = "ezntek"
+                    title = "ezntek's site"
                     subtitle = "My personal site."
                     owner = "ezntek"
                     copyright = "Eason Qin 2023 - Present."
@@ -77,7 +77,7 @@ home = ["HTML", "RSS", "JSON"]
                     missingBackButtonLabel = "Back to home"
 		
 		[languages.en.params.logo]
-			logoText = "ezntek's Blog."
+			logoText = "ezntek"
 			logoHomeLink = "/"
 
 		[languages.en.menu]
@@ -89,19 +89,24 @@ home = ["HTML", "RSS", "JSON"]
 				name = "about"
 				url = "/about"
 				weight = 20
-                        [[languages.en.menu.main]]
-                                name = "revision"
-                                url = "/revision"
-                                weight = 30
 			[[languages.en.menu.main]]
 				identifier = "blog"
 				name = "blog"
 				url = "/posts"
-				weight = 40
+				weight = 30
+                        [[languages.en.menu.main]]
+                                identifier = "personal"
+                                name = "personal blog"
+				url = "/personal"
+                                weight = 40
+                        [[languages.en.menu.main]]
+                                name = "revision"
+                                url = "/revision"
+                                weight = 50
 			[[languages.en.menu.main]]
 				name = "my stuff"
 				url = "/stuff"
-				weight = 50 
+				weight = 60 
 			[[languages.en.menu.main]]
 				identifier = "tags"
 				url = "/tags"
