@@ -4,7 +4,7 @@ date = 2025-05-06T11:30:05+08:00
 author = "ezntek"
 tags = [ "revision" ]
 description = "Sorry, I am NOT motivated to finish this bs."
-draft = true
+draft = false
 +++
 
 ## ezntek, you broke a promise?
