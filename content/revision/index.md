@@ -1,7 +1,6 @@
-# Revision Resources (for OFS)
+# Revision Resources (mostly for OFS)
 
-***this really belongs on [https://rcs0816.org](https://rcs0816.org)***
-
+* [The IGCSE Computer Science (Theory) Revision Guide (Full), Revision 1](/doc/CSRG_Full_Rev1.pdf)
 * [IGCSE Computer Science: Arrays and Iteration Workbook(booklet?)](https://ezntek.com/doc/igcse_cs_arrays_iteration_workbook.pdf)
 * [The OFS IGCSE Computer Science G2 Exam Revision Reference Guide, Revision Three](https://ezntek.com/doc/CSRG_G2_Rev4.pdf)
 * [The OFS IGCSE Computer Science G1 Guide to Programming and Logic Gates, Revision Four](https://ezntek.com/doc/CSRG_G1_Rev4.pdf)
