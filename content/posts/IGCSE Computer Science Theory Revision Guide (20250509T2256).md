@@ -23,6 +23,7 @@ For more info, read the Information section at the front of the guide.
 
 ## DOWNLOAD
 
+* [Revision 2 (May 10, 2025)](/doc/CSRG_Full_Rev2.pdf)
 * [Revision 1 (May 09, 2025)](/doc/CSRG_Full_Rev1.pdf)
 
 <script src="https://utteranc.es/client.js"
