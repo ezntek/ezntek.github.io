@@ -23,8 +23,12 @@ For more info, read the Information section at the front of the guide.
 
 ## DOWNLOAD
 
-* [Revision 2 (May 10, 2025)](/doc/CSRG_Full_Rev2.pdf)
-* [Revision 1 (May 09, 2025)](/doc/CSRG_Full_Rev1.pdf)
+* [Revision 3 (May 11, 2025)](/doc/CSRG_Full_Rev3.pdf)
+
+## CHANGELOG
+
+* **Revision 2**: Added Cloud Storage, fix spelling mistakes, improve wording across chapter 2.
+* **Revision 3**: Add IPv6, fix minor errors in the intro, improve wording in chapter 5.
 
 <script src="https://utteranc.es/client.js"
         repo="ezntek/ezntek.github.io"
