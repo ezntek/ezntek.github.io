@@ -31,6 +31,14 @@ For more info, read the Information section at the front of the guide.
 * **Revision 3**: Add IPv6, fix minor errors in the intro, improve wording in chapter 5.
 * **Revision 4**: Fix RAM access time, add ISBN-13/Modulo 11 syllabus omission notices, add SSL in chapter 5.
 
+## ERRATA
+
+This details the **factual, content-based errors** that I may have made.[^1]
+
+* (fixed in **revision 4**): SRAM/DRAM access time is in **nanoseconds, not milliseconds** (pages 38, 39)
+
+[^1]: Idea suggested by Ved Jaggi. Much appreciated.
+
 <script src="https://utteranc.es/client.js"
         repo="ezntek/ezntek.github.io"
         issue-term="title"
