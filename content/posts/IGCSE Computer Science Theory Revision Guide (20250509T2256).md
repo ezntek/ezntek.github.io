@@ -23,21 +23,25 @@ For more info, read the Information section at the front of the guide.
 
 ## DOWNLOAD
 
-* [Revision 4 (May 12, 2025)](/doc/CSRG_Full_Rev4.pdf)
+* [Revision 5 (May 13, 2025)](/doc/CSRG_Full_Rev5.pdf)
+
+Alternatively, [view the source code on Github](https://github.com/ezntek/CSRG).
 
 ## CHANGELOG
 
 * **Revision 2**: Added Cloud Storage, fix spelling mistakes, improve wording across chapter 2.
 * **Revision 3**: Add IPv6, fix minor errors in the intro, improve wording in chapter 5.
 * **Revision 4**: Fix RAM access time, add ISBN-13/Modulo 11 syllabus omission notices, add SSL in chapter 5.
+* **Revision 5**: Fix spelling errors, formatting errors, add note about possible inclusion of errors.
 
 ## ERRATA
 
 This details the **factual, content-based errors** that I may have made.[^1]
 
 * (fixed in **revision 4**): SRAM/DRAM access time is in **nanoseconds, not milliseconds** (pages 38, 39)
+* (fixed in **revision 5**): DRAM consumes less power (page 39) and not SRAM, the program counter holds the **next instruction** (page 50)
 
-[^1]: Idea suggested by Ved Jaggi. Much appreciated.
+[^1]: Idea suggested by Ved Jaggi. Added to the credits list.
 
 <script src="https://utteranc.es/client.js"
         repo="ezntek/ezntek.github.io"
