@@ -2,7 +2,7 @@
 title = "Nothing's Sweet About 16"
 date = 2025-01-09T07:30:15+08:00
 author = "ezntek"
-tags = [ "life" ]
+tags = [ "personal" ]
 description = "One step closer to death."
 draft = false
 +++
