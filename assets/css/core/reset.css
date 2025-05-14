@@ -1,29 +1,43 @@
 @font-face {
     font-family: 'Cascadia Code';
-    src: url('/assets/fonts/CascadiaCode.ttf') format('truetype');
+    src: url('/fonts/CascadiaCode.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Cascadia Code';
-    src: url('/assets/fonts/CascadiaCode.ttf') format('truetype');
+    src: url('/fonts/CascadiaCode.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Cascadia Code';
-    src: url('/assets/fonts/CascadiaCodeItalic.ttf') format('truetype');
+    src: url('/fonts/CascadiaCodeItalic.ttf') format('truetype');
     font-weight: normal;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'Cascadia Code';
-    src: url('/assets/fonts/CascadiaCodeItalic.ttf') format('truetype');
+    src: url('/fonts/CascadiaCodeItalic.ttf') format('truetype');
     font-weight: bold;
     font-style: italic;
+}
+
+@font-face {
+    font-family: 'Lexend';
+    src: url('/fonts/Lexend-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lexend';
+    src: url('/fonts/Lexend-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
 }
 
 *,
@@ -35,6 +49,11 @@
 html {
     -webkit-tap-highlight-color: transparent;
     overflow-y: scroll;
+}
+
+:root {
+    --layout-font: 'Lexend', sans-serif;
+    --body-font: sans-serif;
 }
 
 a,
@@ -50,11 +69,19 @@ h6 {
 }
 
 body {
-    font-family: monospace, 'Cascadia Code';
+    font-family: var(--body-font);
     font-size: 16px;
     line-height: 1.6;
     word-break: break-word;
     background: var(--theme);
+}
+
+.navtitle {
+    font-family: var(--layout-font);
+}
+
+.navitem {
+    font-family: var(--layout-font);
 }
 
 article,
