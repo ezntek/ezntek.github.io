@@ -153,7 +153,7 @@ I also got no response on Instagram.
 
 **All WhatsApp cares for is money, publicity, and users to milk data from.** We are not users. ***We are useds***. We do not in fact use the software.
 
-Think about it, we are not given any instructions to recover our accounts. We cannot talk to the company. We have no transparency as to how the operate. **We are not given the source code of the app;** if we had the damn source code, maybe I would have been able to read it, and maybe I would have been able to do all the debugging work for them.
+Think about it, we are not given any instructions to recover our accounts. We cannot talk to the company. We have no transparency as to how the operate. **We are not given the source code of the app;** if we had the damn source code, maybe I would have been able to read it. And maybe I would have been able to do all the debugging work for them.
 
 But instead, WhatsApp controls us. They can mess up by banning innocent users, and not talking about it. They can **force people to plead, disrupt lives, and communications**. What happens if somebody was discussing an important business deal on their accounts, an important school event, or anything of the likes?
 
@@ -169,7 +169,7 @@ Here are some interesting things that it says:
 
 * "We collect device and connection-specific information when you install, access, or use our Services." This means that they can collect any information they want about your device, whenever the hell they feel like it. What phone you use, your operating system, your public IP, and even installed apps and such.
 * "As part of the Facebook Companies, WhatsApp receives information from, and shares information with, the other Facebook Companies." This means that WhatsApp can share the data they collect to you to any other branch of facebook they want, whenever the hell they feel like it.
-* "We may modify, suspend, or terminate your access to or use of our Services for the reasons described below." This means that they can do whatever the hell they want to your account, like suspending it for unjust reasons.
+* "We may modify, suspend, or terminate your access to or use of our Services..." This means that they can do whatever the hell they want to your account, like suspending it for unjust reasons.
 
 Basically, you don't even own your own account. How lovely! It's almost like you actually want to use it.
 
@@ -177,7 +177,7 @@ Basically, you don't even own your own account. How lovely! It's almost like you
 
 WhatsApp also steals and sells your data whenever they feel like it. Of course, nobody will tell you this. Search engines have already been ce,nsored. [This article is the tip of the iceberg](https://medium.com/illumination/how-whatsapp-secretly-collects-and-shares-your-data-26b643e45928), you can access it on https://removepaywalls.com if you don't have a medium account.
 
-No source will tell you the truth, that they could technically decrypt your chats and leak them. There is a reason that criminals don't actually use WhatsApp, or journalists; because they know their data will be compromised and that they can be tracked. I can't be assed to find 50 articles for you on this, but a good starting point for your own discussion is that, **if it's so private, why can't we prove it with cold, hard evidence, that being the code that WhatsApp runs on?**
+No source will tell you the truth, that they could technically decrypt your chats and leak them. There is a reason that criminals don't actually use WhatsApp, or journalists; because they know their data will be compromised and that they can be tracked. I can't be assed to find 50 articles for you on this. However, a good starting point for your own discussion is that, **if it's so private, why can't we prove it with cold, hard evidence, that being the code that WhatsApp runs on?**
 
 ## The solution
 
