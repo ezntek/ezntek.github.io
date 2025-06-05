@@ -117,4 +117,7 @@ home = ["HTML", "RSS", "JSON"]
 			[[languages.en.menu.link]]
 				url = "https://github.com/ezntek"
 				name = "GitHub" # GitHub
-			
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
