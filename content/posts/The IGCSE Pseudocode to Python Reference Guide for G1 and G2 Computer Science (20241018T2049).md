@@ -13,15 +13,15 @@ _LibreOffice does not know my full name. What a shame!_
 
 ## DOWNLOAD
 
-[Revision Six](https://ezntek.com/doc/pseudocodereference_rev6.pdf)
+[Revision Seven](https://ezntek.com/doc/pseudocodereference_rev7.pdf)
 
-_Revision two fixed minor syntax highlighting errors, and added details to the Python half of the functions section for consistency._
-_Revision three added a License, the CC-BY-SA-ND 4.0 International License. **all previous versions are also licensed under the same license, if you have it**_.
-_Revision four fixed inconsistencies in the notes, and fixed minor syntax highlighting errors_.
-
-Revision five fixed an error in the for loops section where I iterate from a list beginning from 1 not 0
-
-Revision six fixed errors relating to if statements and arrays
+### Changelog
+* _Revision two fixed minor syntax highlighting errors, and added details to the Python half of the functions section for consistency._
+* _Revision three added a License, the CC-BY-SA-ND 4.0 International License. **all previous versions are also licensed under the same license, if you have it**_.
+* _Revision four fixed inconsistencies in the notes, and fixed minor syntax highlighting errors_.
+* _Revision five fixed an error in the for loops section where I iterate from a list beginning from 1 not 0_.
+* _Revision six fixed errors relating to if statements and arrays_.
+* _Revision seven contains final fix-ups and rephrasing_.
 
 ## What???
 
@@ -43,6 +43,8 @@ and more to come if you nicely ask!
 This is ***NOT*** A comprehensive programming guide! Please do not assume that  this will actually teach you how to code in-depth! When exam season rolls around, I will be authoring a programming tutorial and a theory reference guide just like last year.
 
 stay tuned!!!
+
+(Update as of August 09, 2025: I ended up not finishing the programming guide.)
 
 <script src="https://utteranc.es/client.js"
         repo="ezntek/ezntek.github.io"
