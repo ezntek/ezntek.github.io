@@ -28,16 +28,15 @@ PROCEDURE CanDrinkBeer(Age : INTEGER)
   IF Age > 18
     THEN
       OUTPUT "you can drink beer!"
-  ELSE
-    OUTPUT "do not drink beer!
+    ELSE
+      OUTPUT "do not drink beer!
   ENDIF
 ENDPROCEDURE
 
 DECLARE Age : INTEGER
 OUTPUT "what is your age? "
 INPUT Age
-Result <- CALL CanDrinkBeer(Age)
-OUTPUT Result
+CALL CanDrinkBeer(Age)
 ```
 
 (Without types of course. Let us say that he cannot comprehend those very well).
