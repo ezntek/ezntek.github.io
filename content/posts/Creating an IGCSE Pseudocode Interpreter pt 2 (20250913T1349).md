@@ -11,9 +11,9 @@ draft = false
 
 Check out the first part of this series, of course. This article won't feature too much on the interpreter design, but how to effectively use it to your own benefit.
 
-TL;DR, I tried to write an IGCSE pseudocode interpreter a while ago, and I finished! Find it [here](https://github.com/ezntek/beancode) at <https://github.com/ezntek/beancode>. Or, install it directly with `pip install beancode --break-system-packages` _(this will not break anything, because beancode has no system dependencies, and will not break anything despite the scary flag)_
+TL;DR, I tried to write an IGCSE pseudocode interpreter a while ago, and I finished! Find it [here](https://github.com/ezntek/beancode) at <https://github.com/ezntek/beancode>. Or, install it directly with `pip install beancode --break-system-packages` _(this will not break your system packages, because beancode has no system dependencies, and will not break anything despite the scary flag)_
 
-Jump [here](#extension-features) if you only want to learn about the extra features and functional quirks.
+Jump [here](#extension-features) if you only want to learn about the special and extra features of the interpreter and functional quirks.
 
 # Intro
 
