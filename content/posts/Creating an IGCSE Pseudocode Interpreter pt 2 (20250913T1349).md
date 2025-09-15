@@ -11,6 +11,8 @@ draft = false
 
 Check out the first part of this series, of course. This article won't feature too much on the interpreter design, but how to effectively use it to your own benefit.
 
+TL;DR, I tried to write an IGCSE pseudocode interpreter a while ago, and I finished! Find it [here](https://github.com/ezntek/beancode) at <https://github.com/ezntek/beancode>. Or, install it directly with `pip install beancode --break-system-packages` _(this will not break anything, because beancode has no system dependencies, and will not break anything despite the scary flag)_
+
 Jump [here](#extension-features) if you only want to learn about the extra features and functional quirks.
 
 # Intro
@@ -91,6 +93,15 @@ You will see this pattern literally everywhere :>
 
 This is super scuffed as well. Intrinsics (i.e. "Library Routines" as Cambridge calls them) are implemented literally as Python functions, dispatched with a massive switch-case. The number of arguments are literally just stored in a global hash map. I could go on for hours regarding the cursedness of this thing and how many hacks this thing has implemented. It does literally no optimizations, and global and local variables behave VERY WEIRDLY.
 
+### The REPL
+
+The REPL works on a bunch of input statements. Since each component so far was a reusable class that I could call intermediate methods on, I just stitched them together to make a REPL. I abused Python's `readline` module a lot for basic REPL features like shell history, and moving around in the current input buffer.
+
+- Each line is fed into the lexer, and then parser, and run in a global interpreter context.
+- If EOF is reached during parsing or lexing, the parser throws an exception with the `eof` flag set to `True`. The REPL then catches the exception and enters continuation mode.
+  * The usual prompt is `>> `, but for continuation mode, it is `.. `. The current input buffer before the continuation is saved in a `StringIO`, and every time a new line is entered, the parser tries to analyze the _entire input so far_, and then keeps going if EOF is reached. Otherwise, it returns back to the parent main REPL runner.
+- Position reporting actually works! (Surprisingly, errors work fine for the most part).
+- Some errors report as having position `line 0, column 0`, which is a really annoying feature I left in because I didn't want to null the position field in the error class. _I'll fix it if it's actually that bad_.
 # Extension Features
 
 I will from now assume that you know how to write Pseudocode.
@@ -149,21 +160,18 @@ When a new block is created, all the pointers to outside variables are copied to
 
 ## The REPL
 
-The REPL works on a bunch of input statements. I abuse Python's `readline` module a lot for basic REPL features like shell history, and moving around in the current input buffer.
+The REPL is a _truly life-changing innovation_. Simply launch beancode without any arguments and you will be dropped in a REPL, and you can start typing code. Expressions will be printed.
 
-- Each line is fed into the lexer, and then parser, and run in a global interpreter context.
-- If EOF is reached during parsing or lexing, the parser throws an exception with the `eof` flag set to `True`. The REPL then catches the exception and enters continuation mode.
-  * The usual prompt is `>> `, but for continuation mode, it is `.. `. The current input buffer before the continuation is saved in a `StringIO`, and every time a new line is entered, the parser tries to analyze the _entire input so far_, and then keeps going if EOF is reached. Otherwise, it returns back to the parent main REPL runner.
-- Position reporting actually works! (Surprisingly, errors work fine for the most part).
-- Some errors report as having position `line 0, column 0`, which is a really annoying feature I left in because I didn't want to null the position field in the error class. _I'll fix it if it's actually that bad_.
-- You can talk to the REPL and not the interpreter with dot commands. Here are the very important ones:
+The REPL also has special features which lets you see the state of the interpreter. You can talk to the REPL and not the interpreter with dot commands. Here are the very important ones.
+
   * `.var` gets information regarding an _existing variable_. It prints its name, type, and value.
   * `.vars` prints information regarding _all variables_.
   * `.func` gets information regarding *existing functions* ***or procedures***. 
   * `.funcs` prints information regarding _all functions and procedures_.
   * Delete a variable if you need to with `.delete [name]`. (Version `0.3.4` and up)
   * Or, reset the entire interpreter's state with `.reset`.
-- History is saved to `~/.beancode_history`.
+
+History is saved to `~/.beancode_history`.
 
 # Performance
 
