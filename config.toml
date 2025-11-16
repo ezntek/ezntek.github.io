@@ -51,12 +51,11 @@ baseurl = "/"
         url = "index.xml"
 
 [outputs]
-home = ["HTML", "RSS", "JSON"]
+    home = ["HTML", "RSS", "JSON"]
 
 [markup.goldmark.renderer]
 	unsafe = true
 		
-
 [authors]
 	[[authors.ezntek]]
 		name = "ezntek"

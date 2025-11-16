@@ -1,0 +1,115 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Tuluwasa Kaithifier</title>
+        <meta name="color-scheme" content="dark light" />
+    </head>
+    <style>
+        input,button,textarea {
+            font-size: 1.6em;
+        }
+        .outdiv {
+            font-size: 2.8em;
+            padding: 0.5em;
+        }
+    </style>
+    <body>
+        <center>
+            <h1>Tuluwasa Kaithifier 2.0</h1>
+            <p>Both standard and most non-standard spellings are now supported, including numbers.</p>
+            <p>Copyright © Eason Qin, 2025. Put under the CC BY-SA 4.0 License.</p>
+            <textarea type="text" id="inputBox" placeholder="Osho!"></textarea>
+            <br />
+            <textarea class="outdiv" id="output"></textarea>
+            <br />
+            <button id="btn">Submit</button>
+        </center>
+
+        <script>
+            const CONSONANTS = {
+                b: "𑂥", c: "𑂒", d: "𑂠", f: "𑂤", g: "𑂏", h: "𑂯",
+                j: "𑂔", jj: "𑂕", k: "𑂍", l: "𑂪", m: "𑂧", n: "𑂢",
+                ng: "𑂑", p: "𑂣", r: "𑂩", s: "𑂮", sh: "𑂬", t: "𑂞",
+                th: "𑂟", ts: "𑂓", v: "𑂫", w: "𑂇", x: "𑂎", y: "𑂨", z: "𑂔𑂺"
+            };
+            const VOWELS = {
+                a: "𑂄", e: "𑂉", i: "𑂆", o: "𑂋", u: "𑂈",
+                ai: "𑂊", au: "𑂌", ei: "𑂉𑂆", ey: "𑂉𑂆", oi: "𑂋𑂆"
+            };
+            const NUMBERS = {
+                '0':"०", '1':"१", '2':"२", '3':"३", '4':"४", '5':"५",
+                '6':"६", '7':"७", '8':"८", '9':"९"
+            }
+            const VOWEL_ENDINGS = {
+                a: "\u{110B0}", i: "\u{110B2}", u: "\u{110B4}", e: "\u{110B5}", o: "\u{110B7}",
+                ai: "\u{110B6}", au: "\u{110B8}", ei: "\u{110B5}𑂆", ey: "\u{110B5}𑂆",
+                oi: "\u{110B7}𑂆"
+            };
+            const CONSONANT_CLUSTERS = ["jj", "sh", "ts", "ng", "th"];
+            const VOWEL_CLUSTERS = ["ai", "ei", "ey", "oi", "au"];
+            function convert(inp) {
+                var buf = "";
+                var s = inp.toLowerCase().trim();
+                var i = 0;
+                var prevCons = false;
+                while (i < s.length) {
+                    const ch = s[i];
+                    if (ch in CONSONANTS) {
+                        prevCons = true;
+                        if (i + 1 < s.length) {
+                            const next = s[i + 1];
+                            if (next in CONSONANTS) {
+                                if (CONSONANT_CLUSTERS.includes(ch + next)) {
+                                    buf += CONSONANTS[ch + next];
+                                    i++;
+                                } else {
+                                    buf += CONSONANTS[ch] + "\u{110B9}";
+                                }
+                                i++;
+                                continue;
+                            }
+                        }
+                        buf += CONSONANTS[ch];
+                    } else if (ch in VOWELS) {
+                        if (i + 1 < s.length) {
+                            const next = s[i + 1]; 
+                            var wordEnd = i + 1 == s.length - 1;
+                            var eyCluster = wordEnd && ch + next == "ey";
+                            var isCluster = next in VOWELS && VOWEL_CLUSTERS.includes(ch + next);
+                            if (eyCluster || isCluster) {
+                                if (prevCons) {
+                                    buf += VOWEL_ENDINGS[ch + next];
+                                } else {
+                                    buf += VOWELS[ch + next];
+                                }
+                                i += 2;
+                                prevCons = false;
+                                continue;
+                            }
+                        }
+                        if (prevCons) {
+                            buf += VOWEL_ENDINGS[ch];
+                        } else {
+                            buf += VOWELS[ch];
+                        }
+                        prevCons = false;
+                    } else if (ch in NUMBERS) {
+                        buf += NUMBERS[ch];
+                    } else {
+                        prevCons = false;
+                        buf += ch;
+                    }
+                    i += 1;
+                }
+                return buf;
+            }
+            const inputBox = document.getElementById("inputBox");
+            const output = document.getElementById("output");
+            const btn = document.getElementById("btn");
+            btn.addEventListener("submit", function() {
+                output.textContent = convert(inputBox.value);                
+            });
+        </script>
+    </body>
+</html>
