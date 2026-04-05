@@ -32,7 +32,7 @@ baseurl = "/"
 
 	[params.homeInfoParams]
 	Title = "Hey, Welcome! 👋"
-	Content = "<strong>Introductions first: </strong>I'm ezntek (or Eason), a 16-year-old programmer living in 🇸🇬, and this is where I post both technical and personal content in the form of a blog. <br><br> Check out the personal blog or revision tabs on the top right if that's what you're looking for."
+	Content = "<strong>Introductions first: </strong>I'm ezntek (or Eason), a 17-year-old programmer living in 🇸🇬, and this is where I post both technical and personal content in the form of a blog. <br><br> Check out the personal blog or revision tabs on the top right if that's what you're looking for."
 
 	[[params.socialIcons]]
 	name = "github"
