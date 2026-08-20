@@ -13,7 +13,7 @@ _LibreOffice does not know my full name. What a shame!_
 
 ## DOWNLOAD
 
-[Revision Seven](https://ezntek.com/doc/pseudocodereference_rev7.pdf)
+[Revision Eight](https://ezntek.com/doc/pseudocodereference_rev8.pdf)
 
 ### Changelog
 * _Revision two fixed minor syntax highlighting errors, and added details to the Python half of the functions section for consistency._
@@ -22,10 +22,11 @@ _LibreOffice does not know my full name. What a shame!_
 * _Revision five fixed an error in the for loops section where I iterate from a list beginning from 1 not 0_.
 * _Revision six fixed errors relating to if statements and arrays_.
 * _Revision seven contains final fix-ups and rephrasing_.
+* _Revision eight proved that seven was not final; some syntax errors were fixed, Python list mechanics clarified and some sections rephrased._
 
 ## What???
 
-Yes, count this as a sequel to my [last epic guide](https://ezntek.com/posts/comp-sci-revision-20240509t0944/), which was for the suffering G1 students under _magic man_'s leadership.
+Yes, count this as a sequel to my [last epic guide](https://ezntek.com/posts/comp-sci-revision-20240509t0944/), which was for the suffering G1 students under _magic man_'s leadership. (Update for August 2026: magic man is gone).
 
 This one is for everyone! a **FULLY SYNTAX HIGHLIGHTED** (manually done with blood sweat and tears!) reference with side-by-side examples of common programming tasks in both Pseudocode and Python. Revision One covers:
 
