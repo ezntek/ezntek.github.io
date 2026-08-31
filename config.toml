@@ -1,4 +1,4 @@
-languageCode = 'en-us'
+locale = 'en-US'
 title = "ezntek's site"
 theme = "PaperMod"
 baseurl = "/"
@@ -8,7 +8,7 @@ baseurl = "/"
 
 [params]
 	author = "ezntek"
-	description = "A 16-year-old asian programmer."
+	description = "A 17-year-old asian programmer."
 	subTitle = "ezntek's site"
 	sourceURL = "https://github.com/ezntek/ezntek.github.io"
 	showLicense = true
@@ -120,3 +120,6 @@ baseurl = "/"
 [caches]
   [caches.images]
     dir = ':cacheDir/images'
+
+[security]
+    allowContent = ['.*']
